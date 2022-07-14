@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TodoApp</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  </head>
+  <body>
+    <!--container starts  -->
+    <div class="parent">
+      
+      <div class="upper-container">
+        <div class="left-text"><b>Tasks</b>Lists</div>
+        <div class="right-text">
+          <span id="addList"><i class="fa-solid fa-circle-plus"></i></span>
+            <span class="add-text">Add List</span>
+        </div>
+      </div>
+
+      <div class="lower-container" style="text-align: center;">
+        <h1 id="lower-text"> No items in the to-do list</h1>
+      </div>
+
+    </div>
+      <!--container ends -->
+
+      <!-- new page template  starts-->
+    <div class="next-page">
+      <h1 id="heading"></h1>
+      <i class="fa-solid fa-circle-arrow-left" id="btn"></i>
+      <span class="back"> Go Back</span>
+    </div>
+      <!-- new page template  ends-->
+
+      <!-- to show pop up or blank div to append popup starts-->
+    <div class="wrapper"></div>
+      <!-- to show pop up or blank div to append popup ends-->
+
+    <script src="./logic.js"></script>
+  </body>
+</html>

@@ -1,0 +1,187 @@
+
+body{
+    background-image: url('./background.jfif');
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: cover;
+    
+  }
+
+
+.add-text, .back{
+  color: lightcoral;
+}
+.child {
+    height: 250px;
+    width: 200px;
+  position: relative;
+  border: 1px solid red;
+  border-radius: 12px;
+  text-align: center;
+  padding: 20px;
+  color: palevioletred;
+  background-color:white;
+}
+.button-container {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+.button-container i {
+  padding: 0.5rem;
+}
+.done-button {
+  background-color:blueviolet;
+  border: 1px solid black;
+  color: white;
+  border-radius: 30px;
+}
+
+.lower-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 75vw;
+  margin: auto;
+  color: white;
+}
+.blur {
+    filter: blur(5px);
+  }
+.upper-container {
+  display: flex;
+  grid-template-columns: auto auto;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 65vw;
+  margin: auto;
+  margin-top: 150px;
+}
+.left-text {
+  display: inline-block;
+  font-size: 50px;
+  color:black;
+
+}
+.right-text {
+    text-align: right;
+  font-size: 45px;
+  display: inline-block;
+  padding:15px;
+}
+i {
+  font-size: 35px;
+  color:blue;
+  cursor: pointer;
+}
+.upfront {
+
+  border:2px solid red;
+  border-radius:15px;
+  background-color: antiquewhite;
+  height:220px;
+  width:450px;
+  text-align: center;
+  color:red;
+  font-size:25px;
+  z-index:5;
+   position: absolute; 
+  top:320px;
+  left:530px;
+  margin:auto;
+  animation:popupbox 0.4s ease-in-out;
+}
+.popup-box {
+    border:2px solid red;
+    border-radius:15px;
+    background-color: antiquewhite;
+    height:220px;
+    width:450px;
+    text-align: center;
+    color:red;
+    font-size:25px;
+    z-index:5;
+     position: absolute; 
+    top:320px;
+    left:530px;
+    margin:auto;
+    animation:popupbox 0.4s ease-in-out;
+}
+.popup-box-button {
+    width: 80px;
+    height: 35px;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    border: 0px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 1.5vw;
+    box-sizing: border-box;
+    padding: 0.35rem;
+  }
+.task {
+  margin: 0.5rem;
+}
+.task-text {
+  padding: 15px;
+  font-weight: bold;    
+  font-size: 20px;
+  color:green;
+}
+#box-heading{
+  cursor: pointer;
+  font-size: 2rem;
+}
+input{
+  border-radius: 5px;
+  width: 70%;
+  height: 35px;
+  display: block;
+  margin: auto;
+}
+.button {
+  width: 80px;
+  height: 35px;
+  font-size: 20px;
+  background-color: red;
+  color: white;
+  border: 0px;
+  border-radius: 20px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 1.5vw;
+  box-sizing: border-box;
+  padding: 0.35rem;
+}
+
+.hide {
+  display: none;
+}
+.add-button {
+  float: right;
+  position: relative;
+  top: 125px;
+  left: 50px;
+}
+
+.next-page {
+    position: absolute;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  align-items: center;
+  left: 200px;
+  right: 200px;
+  top:100px;
+}
+@keyframes popupbox {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1)
+    }
+  }
