@@ -11,6 +11,15 @@ body{
 .add-text, .back{
   color: lightcoral;
 }
+.upper-container {
+  display: flex;
+  grid-template-columns: auto auto;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 65vw;
+  margin: auto;
+  margin-top: 150px;
+}
 .child {
     height: 250px;
     width: 200px;
@@ -21,6 +30,7 @@ body{
   padding: 20px;
   color: palevioletred;
   background-color:white;
+   margin:25px;
 }
 .button-container {
   position: absolute;
@@ -48,15 +58,6 @@ body{
 .blur {
     filter: blur(5px);
   }
-.upper-container {
-  display: flex;
-  grid-template-columns: auto auto;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 65vw;
-  margin: auto;
-  margin-top: 150px;
-}
 .left-text {
   display: inline-block;
   font-size: 50px;
@@ -89,7 +90,6 @@ i {
   top:320px;
   left:530px;
   margin:auto;
-  animation:popupbox 0.4s ease-in-out;
 }
 .popup-box {
     border:2px solid red;
@@ -105,7 +105,6 @@ i {
     top:320px;
     left:530px;
     margin:auto;
-    animation:popupbox 0.4s ease-in-out;
 }
 .popup-box-button {
     width: 80px;
@@ -177,11 +176,3 @@ input{
   right: 200px;
   top:100px;
 }
-@keyframes popupbox {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1)
-    }
-  }
